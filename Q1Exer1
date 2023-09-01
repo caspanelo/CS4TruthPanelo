@@ -1,0 +1,60 @@
+class Main {
+  public static void main(String[] args) {
+    String objectName1 = "Toki Pona";
+      int TP_letters = 120;
+      boolean TP_romanstyle = true;
+      String TP_creator = "Sonja Lang";
+    String objectName2 = "Sitelen Pona";
+      int SP_letters = 120;
+      boolean SP_romanstyle = false;
+      String SP_creator = "Sonja Lang";
+    String objectName3 = "Sitelen Sitelen";
+      int SS_letters = 92;
+      boolean SS_romanstyle = false;
+      String SS_creator = "Jonathan Gabel";
+
+    
+    System.out.println(objectName1+"\nNumber of Symbols/Words: "+TP_letters+"\nWritten in Roman Letters?: "+TP_romanstyle+"\nCreator name: "+TP_creator+"\n");
+    System.out.println(objectName2+"\nNumber of Symbols/Words: "+SP_letters+"\nWritten in Roman Letters?: "+SP_romanstyle+"\nCreator name: "+SP_creator+"\n");
+    System.out.println(objectName3+"\nNumber of Symbols/Words: "+SS_letters+"\nWritten in Roman Letters?: "+SS_romanstyle+"\nCreator name: "+SS_creator+"\n");
+
+    //Words
+    if (TP_letters == SP_letters) {
+      System.out.println("Toki Pona has the same number of letters as Sitelen Pona: "+TP_letters);
+    }
+    else {
+      if (TP_letters > SP_letters) {
+        System.out.println("Toki Pona has "+(TP_letters-SP_letters)+" more letters than Sitelen Pona.");
+      }
+      else {
+        System.out.println("Sitelen Pona has "+(SP_letters-TP_letters)+" more letters than Toki Pona.");
+      }
+      
+    }
+    if (TP_letters == SS_letters) {
+      System.out.println("Toki Pona has the same number of letters as Sitelen Sitelen: "+TP_letters);
+    }
+    else {
+      if (TP_letters > SS_letters) {
+        System.out.println("Toki Pona has "+(TP_letters-SS_letters)+" more letters than Sitelen Sitelen.");
+      }
+      else {
+        System.out.println("Sitelen Sitelen has "+(SS_letters-TP_letters)+" more letters than Toki Pona.");
+      }
+      
+    }
+    if (SP_letters == SS_letters) {
+      System.out.println("Sitelen Pona has the same number of letters as Sitelen Sitelen: "+SP_letters);
+    }
+    else {
+      if (SP_letters > SS_letters) {
+        System.out.println("Sitelen Pona has "+(SP_letters-SS_letters)+" more letters than Sitelen Sitelen.");
+      }
+      else {
+        System.out.println("Sitelen Sitelen has "+(SS_letters-SP_letters)+" more letters than Sitelen Pona.");
+      }
+      
+    }
+    
+  }
+}
